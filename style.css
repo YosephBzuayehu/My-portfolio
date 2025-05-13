@@ -284,6 +284,10 @@ ul {
 .aside .nav li a .active {
   color: var(--skin-color);
 }
+.aside .nav li a .hover {
+  background-color:   var(--text-black-900);
+
+}
 
 .aside .nav li a i {
   margin-right: 15px;
@@ -779,6 +783,7 @@ h3.my-profession {
 @media (max-width:1199px) {
   .aside {
     left:-270px; 
+    
   }
 
   .mainContent {
@@ -809,6 +814,7 @@ h3.my-profession {
   }
 }
 @media (max-width:767px){
+  
   .contact .contact-form .col-6,
   .contact .contact-info-item,
   .portfolio .portfolio-item,
@@ -820,7 +826,10 @@ h3.my-profession {
       flex: 0 0 100%;
       max-width: 100%;
   }
-  
+
+
+ 
   }
+  
  
   

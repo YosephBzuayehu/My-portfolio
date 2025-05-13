@@ -1,0 +1,71 @@
+/* Hamburger Menu */
+.hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger i {
+    font-size: 24px;
+    color: var(--text-black-900);
+    background: var(--bg-black-100);
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--bg-black-50);
+}
+
+@media (max-width: 1199px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .aside {
+        left: -270px;
+        transition: all 0.3s ease;
+    }
+    
+    .aside.open {
+        left: 0;
+        box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .mainContent {
+        padding-left: 0;
+    }
+    .home .home-image {
+    display: block !important; /* Force display image */
+}
+
+.home .home-image img {
+   margin: 35px;
+    width: 200px;
+    height: 220px;
+
+}
+.home-image::after {
+
+  content: " ";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-bottom: 8px solid var(--skin-color);
+  border-right: 8px solid var(--skin-color);
+  right: -120px;
+  bottom: 15px;
+}
+
+.home-image::before {
+  content: '';
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-top: 8px solid var(--skin-color);
+  border-left: 8px solid var(--skin-color);
+  left: 25px;
+  top: 15px;
+}
+  
+}
